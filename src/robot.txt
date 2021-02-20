@@ -1,0 +1,5 @@
+# start of file
+disallow: /downloads/
+
+user-agent: magicsearchbot
+allow: /

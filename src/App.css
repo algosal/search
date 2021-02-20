@@ -1,0 +1,393 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 35vmin;
+  pointer-events: none;
+  animation-duration: 3s;
+  animation-name: App-logo-spin;; 
+}
+
+
+.sticky-t{
+  position: fixed;
+  top: 0;
+  margin-top : 50px;
+  margin-left: -320px; 
+}
+
+.sticky-b{
+  position: fixed;
+  left: 35px;
+  bottom: 20px; 
+  margin-left: 0px; 
+}
+
+.sticky-s{
+  position: fixed;
+  left: 35px;
+  bottom: 100px; 
+  margin-left: 0px; 
+}
+
+.App-slidein-div
+{
+  height: 30vmin;
+  animation-duration: 3s;
+  animation-name: slidein; 
+  text-align: left;
+ }
+
+ .App-slidein-div:hover{
+  animation-duration: 5s;
+  animation-name: App-logo-spin; 
+}
+
+ .App-dissolve-div
+{
+  height: 10vmin;
+  animation-duration: 2s;
+  animation-name: dissolve; 
+ }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+
+
+.App-slideout-div
+{
+  height: 30vmin;
+  animation-duration: 3s;
+  animation-name: slideout; 
+  text-align: center;
+ }
+
+@keyframes slideout {
+  from {
+    margin-left: -600px;
+    width: 100%;
+  }
+
+  to {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+
+@keyframes dissolve {
+  from {
+    margin-left: 0%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0px;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.z-index-1{
+  z-index: 2;
+}
+
+.App-header {
+  background-image: linear-gradient(to left, black,red, red, red, black);
+  min-height: 20vh;
+
+  text-align: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.div-height{
+  min-height: 100%;
+}
+
+body{
+  background-image: linear-gradient(to left, black,red, red, red, black);
+  padding-left: 150px;
+  width: 100%; 
+  display:flex; 
+  justify-content: center;
+}
+.btn-color{
+  background-image: linear-gradient(to left, red, brown, red);
+  width: 100%;
+  height: 40px;
+  min-width: 200px;
+  max-width: 200px;
+  border-color: transparent;
+  border-radius: 10px; 
+}
+.btn-color:hover{
+  background-image: linear-gradient(to left, brown, red, brown); 
+}
+
+.btn-color-gold{
+  background-image: linear-gradient(to left, brown, gold, brown);
+  width: 100%;
+  height: 40px;
+  min-width: 200px;
+  max-width: 200px;
+  border-color: transparent;
+  border-radius: 10px; 
+}
+.btn-color-gold:hover{
+  background-image: linear-gradient(to left, gold, brown, gold); 
+}
+
+.btn-color-green{
+  background-image: linear-gradient(to left, pink, lightgreen, pink);
+  width: 100%;
+  height: 40px;
+  min-width: 200px;
+  max-width: 200px;
+  border-color: transparent;
+  border-radius: 10px; 
+}
+.btn-color-green:hover{
+  background-image: linear-gradient(to left, green, pink, green); 
+}
+
+.center
+{
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+
+.min-pixel-half{
+  min-width:500px; 
+}
+
+.display-inline{
+  display: inline-block;
+  width:auto;
+  text-align: center;
+}
+.color-transparent{
+  color: transparent;
+  }
+.color-gold{
+color: gold;
+}
+.color-ivory{
+  color: ivory; 
+}
+.color-red{
+  color: red; 
+}
+.color-green{
+  color: green;  
+}
+.float-right{
+  float:right;
+}
+
+.div-center
+{
+  display: flex;
+  justify-content: center;
+}
+p{
+  max-width:fit-content; 
+}
+.div-borders{
+  border-style: solid black 10px
+}
+.page-left{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px;
+}
+.page-right{
+  background-color: brown;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.page-cover-left{
+  background-color: red;
+  border-radius: 10px;
+  width: 80%;
+  opacity: 1;
+}
+
+.page-cover{
+  background-image: url("https://salmansaeed.us/logos/images/cover.jpg");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  padding: 40px;
+}
+
+.page-old{
+  background-image: url("https://salmansaeed.us/logos/images/onp.png");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+.page-old-flip{
+  background-image: url("https://salmansaeed.us/logos/images/onpflip.png");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+.priority-high{
+  background-image: url("https://salmansaeed.us/logos/images/highPriority.png");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  background-size: 130px 50px; 
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+.graph-simple{
+  background-image: url("https://salmansaeed.us/logos/graphs/simpleGraph.gif");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  background-size: 320px 250px; 
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+.graph-destructure{
+  background-image: url("https://salmansaeed.us/logos/graphs/organizationRestructure.gif");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  background-size: 320px 250px; 
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+.graph-redux{
+  background-image: url("https://salmansaeed.us/logos/graphs/redux.gif");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  background-size: 320px 250px; 
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+.graph-inflection{
+  background-image: url("https://salmansaeed.us/logos/graphs/inflectionPoints.gif");
+  background-color:transparent;
+  border-radius: 10px;
+  background-size: cover;
+  background-size: 320px 250px; 
+  padding: 25px 50px 40px 80px;
+  font-style: italic;
+  font-family: 'Dancing Script', cursive;
+}
+
+.div-250
+{
+  width: 320px; 
+  height: 250px;
+}
+.div-max-width
+{
+  width: 100%; 
+}
+.bg-color
+{
+  background-color: rgb(221, 99, 120);
+}
+
+.bg-color-td
+{
+  background-color: rgb(95, 15, 68);
+}
+
+.bg-color-orange
+{
+  background-color: orange; 
+}
+
+.bg-color-blue
+{
+  background-color: blue;
+}
+
+.bg-color-silver
+{
+  background-color: silver;
+}
+
+.bg-color-red
+{
+  background-color: rgba(255, 0, 0, 0.74);
+}
+
+.bg-color-green
+{
+  background-color: green
+}
+
+.bg-color-brown
+{
+  background-color: brown;
+}
+
+.bg-color-powderblue
+{
+  background-color: powderblue;
+}
+
+.bg-color-black
+{
+  background-color: black;
+}
+.round-borders
+{
+  border-radius: 10px;
+}
+.circle{
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: inline-block
+
+}
