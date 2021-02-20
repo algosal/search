@@ -7,3 +7,6 @@ Technologies Used
 - React
 - HTML/CSS
 - Lighthouse
+
+
+Note: Must Create the Env File as Required by `npm install` instructions
